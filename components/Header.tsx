@@ -16,7 +16,7 @@ const Header = () => {
       </a>
 
       <div
-        className="md:flex border h-10 w-[250px] rounded-xl items-center px-[10px] sm:hidden max-sm:hidden "
+        className="md:flex border h-10 w-[250px] rounded-xl items-center px-[10px] sm:hidden max-sm:hidden"
         style={{ borderColor: isFocus ? '#00b4d8' : '#e2e8f0' }}
       >
         <svg
