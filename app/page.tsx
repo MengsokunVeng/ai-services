@@ -5,7 +5,11 @@ export default function Home() {
     <main className="overflow-hidden py-4">
       <Header />
       <NavBar />
-      <div className="flex justify-around border"></div>
+      <div className="flex justify-around">
+        <div className="bg-red-500"></div>
+        <div className="border"></div>
+        <div className="bg-red-500"></div>
+      </div>
       <div className="flex justify-around max-sm:flex max-sm:justify-start max-sm:px-4">
         <div className=""></div>
         <div className="flex lg:justify-end mt-4 gap-2">
