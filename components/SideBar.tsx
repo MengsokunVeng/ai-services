@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import List from './List'
+import { Pagination } from '.'
 
 const Sidebar = () => {
   const col = Array.from({ length: 50 }, (_, i) => i + 1)

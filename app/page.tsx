@@ -1,4 +1,4 @@
-import { Sidebar, Header, NavBar } from '@/components'
+import { Sidebar, Header, NavBar, Pagination } from '@/components'
 
 export default function Home() {
   return (
@@ -22,6 +22,9 @@ export default function Home() {
         </div>
       </div>
       <Sidebar />
+      <div className="flex justify-center items-center">
+        <Pagination />
+      </div>
     </main>
   )
 }
