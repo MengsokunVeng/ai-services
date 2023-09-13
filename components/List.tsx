@@ -3,11 +3,11 @@ import React from 'react'
 type Props = {
   id: number
   title: string
-  number: number
+  count: number
 }
 
 const List = (props: Props) => {
-  const { id, title, number } = props
+  const { id, title, count } = props
 
   return (
     <div>
@@ -40,7 +40,7 @@ const List = (props: Props) => {
                 aria-hidden="true"
               >
                 <p>
-                  <p>{number}</p>
+                  <p>{count}</p>
                 </p>
               </span>
             </a>

@@ -10,7 +10,7 @@ const Sidebar = () => {
         <p className="text-xl font-bold text-black">Category</p>
 
         {sideBarData.map(({ id, title, count }) => {
-          return <List key={id} title={title} number={count} />
+          return <List key={id} title={title} count={count} id={id} />
         })}
       </div>
       <div className="pt-6 grid lg:grid-cols-4 w-full md:grid-cols-3 max-md:grid-cols-2">
