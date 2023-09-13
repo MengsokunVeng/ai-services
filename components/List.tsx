@@ -1,6 +1,14 @@
 import React from 'react'
 
-const List = () => {
+type Props = {
+  id: number
+  title: string
+  number: number
+}
+
+const List = (props: Props) => {
+  const { id, title, number } = props
+
   return (
     <div>
       <ul className="flex flex-col gap-y-4">
@@ -25,14 +33,14 @@ const List = () => {
                 ></path>
               </svg>
               <p>
-                <p>Image/illustration generation</p>
+                <p>{title}</p>
               </p>
               <span
                 className="ml-auto w-9 min-w-max whitespace-nowrap rounded-full bg-white px-2.5 py-0.5 text-center text-xs p-medium leading-5 ring-1 ring-inset ring-gray-line"
                 aria-hidden="true"
               >
                 <p>
-                  <p>45</p>
+                  <p>{number}</p>
                 </p>
               </span>
             </a>
