@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 const Header = () => {
   const [isFocus, setIsFocus] = useState(false)
@@ -9,10 +10,11 @@ const Header = () => {
     <div className="w-full shadow">
       <div className="flex max-w-[60%] my-0 mx-auto justify-between pb-3 max-sm:mx-5 max-sm:max-w-full">
         <a href="" className="flex flex-row items-center">
-          <img
+          <Image
             src="https://appliv-gai-production.s3.ap-northeast-1.amazonaws.com/images/logo.png"
+            width={118}
+            height={18}
             alt="logo"
-            className="h-10 max-w-full border-none"
           />
         </a>
 

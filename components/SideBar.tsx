@@ -4,7 +4,7 @@ import List from './List'
 import { Pagination } from '.'
 
 const Sidebar = () => {
-  const col = Array.from({ length: 50 }, (_, i) => i + 1)
+  const col = Array.from({ length: 36 }, (_, i) => i + 1)
   const listCol = Array.from({ length: 15 }, (_, i) => i + 1)
 
   return (
