@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div className="w-full shadow">
-      <div className="flex max-w-[60%] my-0 mx-auto justify-between pb-3 max-sm:mx-5 max-sm:max-w-full">
+      <div className="flex max-w-[60%] my-0 mx-auto justify-between pb-3 max-sm:mx-5 max-sm:max-w-full max-[1800px]:max-w-[70%] max-[1600px]:max-w-[75%] max-[1500px]:max-w-[80%]">
         <a href="" className="flex flex-row items-center">
           <Image
             src="https://appliv-gai-production.s3.ap-northeast-1.amazonaws.com/images/logo.png"

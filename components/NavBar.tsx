@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <div className="border-b-[1px] border-gray-200 max-w-[60%] mt-4 mx-auto max-sm:mx-5 max-sm:max-w-full">
+    <div className="border-b-[1px] border-gray-200 max-w-[60%] mt-4 mx-auto max-sm:mx-5 max-sm:max-w-full max-[1800px]:max-w-[70%] max-[1600px]:max-w-[75%] max-[1500px]:max-w-[80%]">
       <div className="flex justify-start mb-10">
         <a href="" className="text-cyan-500">
           TOP

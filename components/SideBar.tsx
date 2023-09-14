@@ -1,19 +1,33 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import List from './List'
 import { aiServicesData, sideBarData } from '@/constants'
 
 const Sidebar = () => {
-  return (
-    <div className="flex max-w-[60%] my-0 mx-auto max-sm:max-w-full max-sm:mx-5">
-      <div className="space-y-3 pt-6 mt-0 max-md:hidden">
-        <p className="text-xl font-bold text-black">Category</p>
+  const [width, setWidth] = useState(window.innerWidth)
+  const breakPoint = 1200
 
-        {sideBarData.map(({ id, title, count }) => {
-          return <List key={id} title={title} count={count} id={id} />
-        })}
-      </div>
-      <div className="pt-6 grid lg:grid-cols-4 w-full md:grid-cols-3 max-md:grid-cols-2">
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth)
+    window.addEventListener('resize', handleWindowResize)
+
+    return () => window.removeEventListener('resize', handleWindowResize)
+  }, [])
+
+  return (
+    <div className="flex max-w-[60%] my-0 mx-auto max-[1800px]:max-w-[70%] max-[1600px]:max-w-[75%] max-[1500px]:max-w-[80%] max-sm:mx-5 ">
+      {width > breakPoint && (
+        <div className="space-y-3 pt-6 mt-0 max-md:hidden ">
+          <p className="text-xl font-bold text-black">Category</p>
+
+          {sideBarData.map(({ id, title, count }) => {
+            return <List key={id} title={title} count={count} id={id} />
+          })}
+        </div>
+      )}
+      <div className="pt-6 grid lg:grid-cols-4 w-full h-fit md:grid-cols-3 max-md:grid-cols-2">
         {aiServicesData.map(({ id, image, rating, title, description }) => {
           return (
             <Card
