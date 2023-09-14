@@ -6,15 +6,16 @@ import List from './List'
 import { aiServicesData, sideBarData } from '@/constants'
 
 const Sidebar = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(0)
   const breakPoint = 1200
+  if (typeof window !== 'undefined') {
+    useEffect(() => {
+      const handleWindowResize = () => setWidth(window.innerWidth)
+      window.addEventListener('resize', handleWindowResize)
 
-  useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    window.addEventListener('resize', handleWindowResize)
-
-    return () => window.removeEventListener('resize', handleWindowResize)
-  }, [])
+      return () => window.removeEventListener('resize', handleWindowResize)
+    }, [])
+  }
 
   return (
     <div className="flex max-w-[60%] my-0 mx-auto max-[1800px]:max-w-[70%] max-[1600px]:max-w-[75%] max-[1500px]:max-w-[80%] max-sm:mx-5 ">
