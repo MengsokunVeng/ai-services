@@ -6,7 +6,7 @@ import List from './List'
 import { aiServicesData, sideBarData } from '@/constants'
 
 const Sidebar = () => {
-  const [width, setWidth] = useState(0)
+  const [width, setWidth] = useState(1700)
   const breakPoint = 1200
   if (typeof window !== 'undefined') {
     useEffect(() => {
