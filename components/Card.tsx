@@ -1,6 +1,6 @@
 import React from 'react'
 
-type AiData = {
+export type AiData = {
   id: number
   title: string
   image: string

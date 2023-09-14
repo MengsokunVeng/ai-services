@@ -5,14 +5,15 @@ export const aiServicesData = [
     rating: 5,
     title: 'Natural Language Processing',
     description: 'Advanced language processing for chatbots and text analysis.',
+    category: 'Artificial Intelligence',
   },
   {
     id: 2,
     image: 'service2.jpg',
-    name: '',
     rating: 3,
     title: 'Image Recognition',
     description: 'Identify objects, faces, and scenes in images and videos.',
+    category: 'Artificial Intelligence',
   },
   {
     id: 3,
@@ -20,6 +21,7 @@ export const aiServicesData = [
     rating: 5,
     title: 'Machine Learning Algorithms',
     description: 'Custom machine learning models for predictive analytics.',
+    category: 'writing',
   },
   {
     id: 4,
@@ -27,6 +29,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Speech Recognition',
     description: 'Convert spoken language into written text for transcription.',
+    category: 'writing',
   },
   {
     id: 5,
@@ -34,6 +37,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Recommendation Systems',
     description: 'Personalized product and content recommendations.',
+    category: 'prompt',
   },
   {
     id: 6,
@@ -41,6 +45,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Computer Vision',
     description: 'Extract information from images for various applications.',
+    category: 'writing',
   },
   {
     id: 7,
@@ -48,6 +53,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Natural Language Generation',
     description: 'Generate human-like text content for chatbots and reports.',
+    category: '',
   },
   {
     id: 8,
@@ -55,6 +61,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Predictive Analytics',
     description: 'Utilize historical data to make predictions and inform decisions.',
+    category: 'writing',
   },
   {
     id: 9,
@@ -62,6 +69,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Data Visualization',
     description: 'Create interactive charts and graphs to explore data.',
+    category: 'writing',
   },
   {
     id: 10,
@@ -69,6 +77,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Voice Assistants',
     description: 'Build voice-enabled applications and virtual assistants.',
+    category: '',
   },
 
   {
@@ -77,6 +86,7 @@ export const aiServicesData = [
     rating: 5,
     title: 'Robotics',
     description: 'Design, build, and program intelligent robots and drones.',
+    category: 'prompt',
   },
   {
     id: 12,
@@ -84,6 +94,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Internet of Things',
     description: 'Connect and manage networks of physical devices and sensors.',
+    category: 'prompt',
   },
   {
     id: 13,
@@ -91,6 +102,7 @@ export const aiServicesData = [
     rating: 5,
     title: 'Customer Segmentation',
     description: 'Divide customers into groups based on common attributes.',
+    category: 'prompt',
   },
   {
     id: 14,
@@ -98,6 +110,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Chatbots',
     description: 'Create conversational interfaces powered by NLP and dialog management.',
+    category: 'prompt',
   },
   // ...
   {
@@ -106,6 +119,7 @@ export const aiServicesData = [
     rating: 5,
     title: 'Virtual Agents',
     description: 'Provide automated customer service through avatars.',
+    category: '',
   },
   {
     id: 22,
@@ -113,6 +127,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Network Analysis',
     description: 'Analyze the relationships in complex networks and graphs.',
+    category: '',
   },
   {
     id: 23,
@@ -120,6 +135,7 @@ export const aiServicesData = [
     rating: 5,
     title: 'Neural Networks',
     description: 'Build and train neural net models for complex data.',
+    category: '',
   },
   {
     id: 24,
@@ -127,6 +143,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Reinforcement Learning',
     description: 'Develop agents that learn by interacting with environments.',
+    category: '',
   },
   {
     id: 25,
@@ -134,6 +151,7 @@ export const aiServicesData = [
     rating: 3,
     title: 'Automated Planning',
     description: 'Create systems that can formulate plans and make decisions.',
+    category: '',
   },
   {
     id: 26,
@@ -141,6 +159,7 @@ export const aiServicesData = [
     rating: 5,
     title: 'Computer Audition',
     description: 'Extract information from audio signals.',
+    category: 'Avatar creation',
   },
   {
     id: 27,
@@ -148,6 +167,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Natural Language Generation',
     description: 'Generate human-like text content.',
+    category: 'Avatar creation',
   },
   {
     id: 28,
@@ -155,6 +175,7 @@ export const aiServicesData = [
     rating: 5,
     title: 'Speech Synthesis',
     description: 'Convert text to human-like speech.',
+    category: 'Avatar creation',
   },
   {
     id: 29,
@@ -162,6 +183,7 @@ export const aiServicesData = [
     rating: 3,
     title: 'Bioinformatics',
     description: 'Manage and analyze biological data.',
+    category: 'Avatar creation',
   },
   {
     id: 30,
@@ -169,6 +191,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Computer Vision',
     description: 'Extract insights from visual data.',
+    category: '',
   },
   {
     id: 31,
@@ -176,6 +199,7 @@ export const aiServicesData = [
     rating: 5,
     title: 'Expert Systems',
     description: 'Provide decisions based on rules and logic.',
+    category: 'Q&A format',
   },
   {
     id: 32,
@@ -183,6 +207,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Robot Vision',
     description: 'Enable robots to perceive and interpret visual inputs.',
+    category: 'Avatar creation',
   },
   {
     id: 33,
@@ -190,6 +215,7 @@ export const aiServicesData = [
     rating: 3,
     title: 'Cybersecurity',
     description: 'Protect systems and networks from attacks.',
+    category: 'Q&A format',
   },
   {
     id: 34,
@@ -197,6 +223,7 @@ export const aiServicesData = [
     rating: 5,
     title: 'Quantum Computing',
     description: 'Perform complex computations with quantum systems.',
+    category: 'Q&A format',
   },
   {
     id: 35,
@@ -204,6 +231,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Logistics Optimization',
     description: 'Optimize transportation and logistics operations.',
+    category: '',
   },
   {
     id: 36,
@@ -211,6 +239,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Anomaly Detection',
     description: 'Identify unusual patterns in data.',
+    category: 'Email writing',
   },
   {
     id: 37,
@@ -218,6 +247,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Anomaly Detection',
     description: 'Identify unusual patterns in data.',
+    category: 'Email writing',
   },
   {
     id: 38,
@@ -225,6 +255,7 @@ export const aiServicesData = [
     rating: 4,
     title: 'Anomaly Detection',
     description: 'Identify unusual patterns in data.',
+    category: 'Video/video generation',
   },
 ]
 
@@ -278,45 +309,5 @@ export const sideBarData = [
     id: 10,
     title: 'prompt',
     count: 50,
-  },
-  {
-    id: 11,
-    title: 'Video recognition',
-    count: 23,
-  },
-  {
-    id: 12,
-    title: 'Tweet generation',
-    count: 35,
-  },
-  {
-    id: 13,
-    title: 'Customer support',
-    count: 27,
-  },
-  {
-    id: 14,
-    title: 'Data analysis',
-    count: 53,
-  },
-  {
-    id: 15,
-    title: 'Meeting',
-    count: 53,
-  },
-  {
-    id: 16,
-    title: 'Text reading',
-    count: 23,
-  },
-  {
-    id: 17,
-    title: 'Task automation',
-    count: 75,
-  },
-  {
-    id: 9,
-    title: 'SEO content creation',
-    count: 23,
   },
 ]
