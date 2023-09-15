@@ -4,15 +4,31 @@ const Pagination = () => {
   return (
     <div className="mt-5 sm:w-full">
       <span className="relative z-0 flex justify-center ml-[300px] max-md:hidden">
-        <span aria-current="page">
-          <span className="relative inline-flex items-center mx-4 px-2 py-2 -ml-px text-sm border-b-2 border-primary font-medium text-gray-500 bg-white cursor-default leading-5">
-            <p>
-              <p>1</p>
-            </p>
-          </span>
-        </span>
         <a
-          href="http://app-liv.jp/ai/tools?page=2"
+          href="/"
+          rel="next"
+          className="relative inline-flex items-center px-2 py-2 -ml-px text-sm font-medium text-white bg-primary rounded-full leading-5 hover:text-gray-400 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
+          aria-label="pagination.next"
+        >
+          <svg className="w-5 h-5" fill="gray" viewBox="0 0 20 20">
+            <path
+              fill-rule="evenodd"
+              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="/"
+          className="relative inline-flex items-center mx-4 px-2 py-2 -ml-px text-sm font-medium text-gray-text border-b-2 border-gray-line bg-white leading-5 md:hover:opacity-75 md:transition-opacity md:ease-in"
+          aria-label="Go to page 3"
+        >
+          <p>
+            <p>1</p>
+          </p>
+        </a>
+        <a
+          href="/"
           className="relative inline-flex items-center mx-4 px-2 py-2 -ml-px text-sm font-medium text-gray-text border-b-2 border-gray-line bg-white leading-5 md:hover:opacity-75 md:transition-opacity md:ease-in"
           aria-label="Go to page 2"
         >
@@ -21,7 +37,7 @@ const Pagination = () => {
           </p>
         </a>
         <a
-          href="http://app-liv.jp/ai/tools?page=3"
+          href="/"
           className="relative inline-flex items-center mx-4 px-2 py-2 -ml-px text-sm font-medium text-gray-text border-b-2 border-gray-line bg-white leading-5 md:hover:opacity-75 md:transition-opacity md:ease-in"
           aria-label="Go to page 3"
         >
@@ -30,7 +46,7 @@ const Pagination = () => {
           </p>
         </a>
         <a
-          href="http://app-liv.jp/ai/tools?page=4"
+          href="/"
           className="relative inline-flex items-center mx-4 px-2 py-2 -ml-px text-sm font-medium text-gray-text border-b-2 border-gray-line bg-white leading-5 md:hover:opacity-75 md:transition-opacity md:ease-in"
           aria-label="Go to page 4"
         >
@@ -39,7 +55,7 @@ const Pagination = () => {
           </p>
         </a>
         <a
-          href="http://app-liv.jp/ai/tools?page=5"
+          href="/"
           className="relative inline-flex items-center mx-4 px-2 py-2 -ml-px text-sm font-medium text-gray-text border-b-2 border-gray-line bg-white leading-5 md:hover:opacity-75 md:transition-opacity md:ease-in"
           aria-label="Go to page 5"
         >
@@ -48,7 +64,7 @@ const Pagination = () => {
           </p>
         </a>
         <a
-          href="http://app-liv.jp/ai/tools?page=6"
+          href="/"
           className="relative inline-flex items-center mx-4 px-2 py-2 -ml-px text-sm font-medium text-gray-text border-b-2 border-gray-line bg-white leading-5 md:hover:opacity-75 md:transition-opacity md:ease-in"
           aria-label="Go to page 6"
         >
@@ -57,7 +73,7 @@ const Pagination = () => {
           </p>
         </a>
         <a
-          href="http://app-liv.jp/ai/tools?page=7"
+          href="/"
           className="relative inline-flex items-center mx-4 px-2 py-2 -ml-px text-sm font-medium text-gray-text border-b-2 border-gray-line bg-white leading-5 md:hover:opacity-75 md:transition-opacity md:ease-in"
           aria-label="Go to page 7"
         >
@@ -66,7 +82,7 @@ const Pagination = () => {
           </p>
         </a>
         <a
-          href="http://app-liv.jp/ai/tools?page=8"
+          href="/"
           className="relative inline-flex items-center mx-4 px-2 py-2 -ml-px text-sm font-medium text-gray-text border-b-2 border-gray-line bg-white leading-5 md:hover:opacity-75 md:transition-opacity md:ease-in"
           aria-label="Go to page 8"
         >
@@ -75,7 +91,7 @@ const Pagination = () => {
           </p>
         </a>
         <a
-          href="http://app-liv.jp/ai/tools?page=9"
+          href="/"
           className="relative inline-flex items-center mx-4 px-2 py-2 -ml-px text-sm font-medium text-gray-text border-b-2 border-gray-line bg-white leading-5 md:hover:opacity-75 md:transition-opacity md:ease-in"
           aria-label="Go to page 9"
         >
@@ -85,12 +101,12 @@ const Pagination = () => {
         </a>
 
         <a
-          href="http://app-liv.jp/ai/tools?page=2"
+          href="/"
           rel="next"
           className="relative inline-flex items-center px-2 py-2 -ml-px text-sm font-medium text-white bg-primary rounded-full leading-5 hover:text-gray-400 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150"
           aria-label="pagination.next"
         >
-          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <svg className="w-5 h-5" fill="black" viewBox="0 0 20 20">
             <path
               fill-rule="evenodd"
               d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
