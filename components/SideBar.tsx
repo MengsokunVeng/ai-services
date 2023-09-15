@@ -1,11 +1,14 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import Card from './Card'
+import Card, { AiData } from './Card'
 import List from './List'
 import { aiServicesData, sideBarData } from '@/constants'
+interface SidebarProps {
+  data: AiData[]
+}
 
-const Sidebar = () => {
+const Sidebar = ({ data }: SidebarProps) => {
   const [width, setWidth] = useState(1700)
   const breakPoint = 1200
   if (typeof window !== 'undefined') {
@@ -29,7 +32,7 @@ const Sidebar = () => {
         </div>
       )}
       <div className="pt-6 grid lg:grid-cols-4 w-full h-fit md:grid-cols-3 max-md:grid-cols-2">
-        {aiServicesData.map(({ id, image, rating, title, description }) => {
+        {data.map(({ id, image, rating, title, description }: AiData) => {
           return (
             <Card
               key={id}

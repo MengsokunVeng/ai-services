@@ -1,6 +1,6 @@
 import React from 'react'
 
-type AiData = {
+export type AiData = {
   id: number
   title: string
   image: string
@@ -49,10 +49,7 @@ const Card = (props: AiData) => {
   return (
     <div className="flex w-full pl-[10px] items-center  justify-center">
       <div className=" mb-2 max-w-[95%]">
-        <a
-          href="https://app-liv.jp/ai/tools/1199/"
-          className="md:hover:opacity-75 md:transition-opacity md:ease-in"
-        >
+        <a href="/" className="md:hover:opacity-75 md:transition-opacity md:ease-in">
           <div className=" group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
             <img
               width="100%"
